@@ -1,0 +1,28 @@
+    1  cd ~
+    2  Mkdir examen372 && cd "examen372"
+    3  for file in index.html style.css app.js main.py; do     touch ./"${file}"; done
+    4  for file in index.html style.css app.js main.py; do     touch ./"${file}"; done
+    5  cmd //c tree //F ./:
+    6  cmd //c tree /
+    7  cmd //c tree //F ./
+    8  cmd //c tree //C ./
+    9  cmd //c tree /instrucciones/examen372~
+   10  cmd //c tree //C /instrucciones/examen372~
+   11  cd webapp
+   12  cmd //c tree //F ./
+   13  cmd //c tree //C ./
+   14  curl -o meme.jpg "https://pm1.aminoapps.com/7021/417429318f6b29b6bc737fb95ba1ddafc9ba2decr1-720-642v2_hq.jpg"
+   15  read -p "Introduce la cantidad de archivos a crear:" numfiles
+   16  for x in $( seq 1 $numfiles ); do     echo "Archivo ${x}" > "file${x}.txt"; done
+   17  cmd //c tree //F ./
+   18  cmd //c tree //C ./
+   19  mv style.css css/
+   20  mv file*.txt docs/text/
+   21  mv main.py docs/python/
+   22  mv app.js js/
+   23  cmd //c tree //F ./
+   24  ./create.sh 
+   25  cd ..
+   26  cd ..
+   27  mv examen372.md examen372/README.md
+   28  history > history.txt
